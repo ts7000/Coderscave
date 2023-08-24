@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tanuj's Code Editor</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<a download id="download"></a>
+	<header>
+		<h1>Tanuj's Code Editor</h1>
+	</header>
+	<table width="100%" border="0" cellspacing="5" cellpadding="5">
+		<tr>
+			<td width="50%" scope="col">&nbsp;</td>
+			<td width="50%" align="left" scope="col"></td>
+		</tr>
+		<tr>
+			<td>
+				<form>
+					<strong>HTML</strong>
+					<textarea name="htmlSource" id="htmlSource"></textarea>
+					<strong>CSS</strong>
+					<textarea name="cssSource" id="cssSource"></textarea>
+					<strong>JS</strong>
+					<textarea name="jsSource" id="jsSource"></textarea>
+				</form>
+			</td>
+			<td>
+				<strong>Output</strong>
+				<iframe name="targetCode" id="targetCode" style="background-color: #fff;"></iframe>
+			</td>
+		</tr>
+	</table>
+	<center>
+		<button onclick="runCode();">Run Code</button>
+		<button onclick="clearCode();">Clear Code</button>
+	</center>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
